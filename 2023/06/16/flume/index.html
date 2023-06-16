@@ -4,14 +4,14 @@
   <meta charset="utf-8">
   
   
-  <title>Hexo</title>
+  <title>Flume配置文档 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="title:Flume配置文档Flume概述Flume是一个进行海量流式（streaming）事件数据采集的分布式系统。Flume多用于对软件系统的日志文件数据的采集，目前成为Apache软件基金会的顶级项目之一。 Flume是的一个分布式、高可用、高可靠的海量日志采集、聚合和传输的系统，支持在日志系统中定制各类数据发送方，用于收集数据，同时提供了对数据进行简单处理并写到各种数据接收方的能力。">
+  <meta name="description" content="Flume概述Flume是一个进行海量流式（streaming）事件数据采集的分布式系统。Flume多用于对软件系统的日志文件数据的采集，目前成为Apache软件基金会的顶级项目之一。 Flume是的一个分布式、高可用、高可靠的海量日志采集、聚合和传输的系统，支持在日志系统中定制各类数据发送方，用于收集数据，同时提供了对数据进行简单处理并写到各种数据接收方的能力。 Flume的设计原理是基于数据流">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo">
+<meta property="og:title" content="Flume配置文档">
 <meta property="og:url" content="http://example.com/2023/06/16/flume/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="title:Flume配置文档Flume概述Flume是一个进行海量流式（streaming）事件数据采集的分布式系统。Flume多用于对软件系统的日志文件数据的采集，目前成为Apache软件基金会的顶级项目之一。 Flume是的一个分布式、高可用、高可靠的海量日志采集、聚合和传输的系统，支持在日志系统中定制各类数据发送方，用于收集数据，同时提供了对数据进行简单处理并写到各种数据接收方的能力。">
+<meta property="og:description" content="Flume概述Flume是一个进行海量流式（streaming）事件数据采集的分布式系统。Flume多用于对软件系统的日志文件数据的采集，目前成为Apache软件基金会的顶级项目之一。 Flume是的一个分布式、高可用、高可靠的海量日志采集、聚合和传输的系统，支持在日志系统中定制各类数据发送方，用于收集数据，同时提供了对数据进行简单处理并写到各种数据接收方的能力。 Flume的设计原理是基于数据流">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://example.com/md%E5%9B%BE%5Cflume.assets/image-20200327112206283.png">
 <meta property="og:image" content="http://example.com/2023/06/16/flume/md%E5%9B%BE/flume.assets/image-20230303092506796.png">
@@ -67,7 +67,7 @@
 <meta property="og:image" content="http://example.com/.%5Cmd%E5%9B%BE%5Cflume.assets%5Cimage-20230201010622186.png">
 <meta property="og:image" content="http://example.com/.%5Cmd%E5%9B%BE%5Cflume.assets%5Cimage-20230131000318670.png">
 <meta property="article:published_time" content="2023-06-16T02:14:14.990Z">
-<meta property="article:modified_time" content="2023-06-16T02:20:43.774Z">
+<meta property="article:modified_time" content="2023-06-16T02:33:24.247Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/md%E5%9B%BE%5Cflume.assets/image-20200327112206283.png">
@@ -139,10 +139,19 @@
   <div class="article-inner">
     
     
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      Flume配置文档
+    </h1>
+  
+
+      </header>
+    
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <hr>
-<h2 id="title-Flume配置文档"><a href="#title-Flume配置文档" class="headerlink" title="title:Flume配置文档"></a>title:Flume配置文档</h2><h1 id="Flume概述"><a href="#Flume概述" class="headerlink" title="Flume概述"></a>Flume概述</h1><p>Flume是一个进行海量流式（streaming）事件数据采集的分布式系统。Flume多用于对软件系统的日志文件数据的采集，目前成为Apache软件基金会的顶级项目之一。</p>
+        <h1 id="Flume概述"><a href="#Flume概述" class="headerlink" title="Flume概述"></a>Flume概述</h1><p>Flume是一个进行海量流式（streaming）事件数据采集的分布式系统。Flume多用于对软件系统的日志文件数据的采集，目前成为Apache软件基金会的顶级项目之一。</p>
 <p>Flume是的一个<code>分布式、高可用、高可靠</code>的海量<code>日志采集</code>、<code>聚合</code>和<code>传输</code>的系统，支持在日志系统中定制各类数据发送方，用于收集数据，同时提供了对数据进行<code>简单处理</code>并<code>写到</code>各种<code>数据接收方</code>的能力。</p>
 <p>Flume的设计原理是基于<code>数据流</code>的，能够将不同数据源的海量日志数据进行高效<code>收集、聚合、移动</code>，最后存储到一个<code>中心化数据存储系统</code>中。 Flume能够做到近似实时的推送，并且可以满足数据量是持续且量级很大的情况。比如它可以收集社交网站日志，并将这些数量庞大的日志数据从网站服务器上汇集起来，存储到HDFS或 HBase分布式数据库中。</p>
 <blockquote>
@@ -2415,7 +2424,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2023/06/16/flume/" data-id="clixy6nlx000ax4w99e58g9cz" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2023/06/16/flume/" data-id="clixyjqjm00064sw9ac92d2n9" data-title="Flume配置文档" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -2429,7 +2438,7 @@
       <strong class="article-nav-caption">Newer</strong>
       <div class="article-nav-title">
         
-          (no title)
+          Gite配置
         
       </div>
     </a>
@@ -2437,7 +2446,7 @@
   
     <a href="/2023/06/16/Docker%E5%AE%9E%E7%94%A8%E7%AF%87/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title"></div>
+      <div class="article-nav-title">Docker实用</div>
     </a>
   
 </nav>
@@ -2475,23 +2484,23 @@
       <ul>
         
           <li>
-            <a href="/2023/06/16/Hive3%E5%AE%89%E8%A3%85/">(no title)</a>
+            <a href="/2023/06/16/Hive3%E5%AE%89%E8%A3%85/">Hive3安装</a>
           </li>
         
           <li>
-            <a href="/2023/06/16/Hadoop-3.3.0-Centos7/">(no title)</a>
+            <a href="/2023/06/16/Hadoop-3.3.0-Centos7/">Hadoop3.3.0-Linux环境安装</a>
           </li>
         
           <li>
-            <a href="/2023/06/16/zookeeper%E9%83%A8%E7%BD%B2%E6%96%87%E6%A1%A3/">(no title)</a>
+            <a href="/2023/06/16/zookeeper%E9%83%A8%E7%BD%B2%E6%96%87%E6%A1%A3/">Zookeeper配置文档</a>
           </li>
         
           <li>
-            <a href="/2023/06/16/Sqoop/">(no title)</a>
+            <a href="/2023/06/16/Sqoop/">Sqoop配置文档</a>
           </li>
         
           <li>
-            <a href="/2023/06/16/Spark%E9%83%A8%E7%BD%B2%E6%96%87%E6%A1%A3/">(no title)</a>
+            <a href="/2023/06/16/Spark%E9%83%A8%E7%BD%B2%E6%96%87%E6%A1%A3/">Spark部署</a>
           </li>
         
       </ul>

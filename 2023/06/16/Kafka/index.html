@@ -4,14 +4,14 @@
   <meta charset="utf-8">
   
   
-  <title>Hexo</title>
+  <title>kafka配置文档 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="title:kafka配置文档一、Kafka简介1.1 什么是kafkaKafka 它最初由LinkedIn 公司开发，之后成为Apache 项目的一部分。Kafka 是一个分布式消息中间件,支持分区的、多副本的、多订阅者的、基于zookeeper 协调的分布式消息系统。通俗来说： kafka 就是一个存储系统，存储的数据形式为“消息&quot;；它的主要作用类似于蓄水池，起到一个缓冲作用；">
+  <meta name="description" content="一、Kafka简介1.1 什么是kafkaKafka 它最初由LinkedIn 公司开发，之后成为Apache 项目的一部分。Kafka 是一个分布式消息中间件,支持分区的、多副本的、多订阅者的、基于zookeeper 协调的分布式消息系统。通俗来说： kafka 就是一个存储系统，存储的数据形式为“消息&quot;；它的主要作用类似于蓄水池，起到一个缓冲作用；   Kafka是由Apache软件">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo">
+<meta property="og:title" content="kafka配置文档">
 <meta property="og:url" content="http://example.com/2023/06/16/Kafka/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="title:kafka配置文档一、Kafka简介1.1 什么是kafkaKafka 它最初由LinkedIn 公司开发，之后成为Apache 项目的一部分。Kafka 是一个分布式消息中间件,支持分区的、多副本的、多订阅者的、基于zookeeper 协调的分布式消息系统。通俗来说： kafka 就是一个存储系统，存储的数据形式为“消息&quot;；它的主要作用类似于蓄水池，起到一个缓冲作用；">
+<meta property="og:description" content="一、Kafka简介1.1 什么是kafkaKafka 它最初由LinkedIn 公司开发，之后成为Apache 项目的一部分。Kafka 是一个分布式消息中间件,支持分区的、多副本的、多订阅者的、基于zookeeper 协调的分布式消息系统。通俗来说： kafka 就是一个存储系统，存储的数据形式为“消息&quot;；它的主要作用类似于蓄水池，起到一个缓冲作用；   Kafka是由Apache软件">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://example.com/2023/06/16/Kafka/md%E5%9B%BE/kafka.assets/image-20230204221620734.png">
 <meta property="og:image" content="http://example.com/2023/06/16/Kafka/md%E5%9B%BE/kafka.assets/image-20230204221832864.png">
@@ -45,7 +45,7 @@
 <meta property="og:image" content="http://example.com/.%5Cmd%E5%9B%BE%5Ckafka.assets%5Cproducer%E6%B5%81%E7%A8%8B%E5%9B%BE.jpg">
 <meta property="og:image" content="http://example.com/2023/06/16/Kafka/md%E5%9B%BE/kafka.assets/image-20230221221618036.png">
 <meta property="article:published_time" content="2023-06-16T02:14:14.999Z">
-<meta property="article:modified_time" content="2023-06-16T02:22:57.272Z">
+<meta property="article:modified_time" content="2023-06-16T02:34:47.537Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/2023/06/16/Kafka/md%E5%9B%BE/kafka.assets/image-20230204221620734.png">
@@ -117,10 +117,19 @@
   <div class="article-inner">
     
     
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      kafka配置文档
+    </h1>
+  
+
+      </header>
+    
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <hr>
-<h2 id="title-kafka配置文档"><a href="#title-kafka配置文档" class="headerlink" title="title:kafka配置文档"></a>title:kafka配置文档</h2><h2 id="一、Kafka简介"><a href="#一、Kafka简介" class="headerlink" title="一、Kafka简介"></a>一、Kafka简介</h2><h3 id="1-1-什么是kafka"><a href="#1-1-什么是kafka" class="headerlink" title="1.1 什么是kafka"></a>1.1 什么是kafka</h3><p>Kafka 它最初由LinkedIn 公司开发，之后成为Apache 项目的一部分。<br>Kafka 是一个<code>分布式消息中间件,支持分区的、多副本的、多订阅者的</code>、<code>基于zookeeper 协调的</code>分布式<br>消息系统。<br>通俗来说：<code> kafka 就是一个存储系统，存储的数据形式为“消息&quot;；</code><br>它的主要作用类似于蓄水池，起到一个<code>缓冲</code>作用；</p>
+        <h2 id="一、Kafka简介"><a href="#一、Kafka简介" class="headerlink" title="一、Kafka简介"></a>一、Kafka简介</h2><h3 id="1-1-什么是kafka"><a href="#1-1-什么是kafka" class="headerlink" title="1.1 什么是kafka"></a>1.1 什么是kafka</h3><p>Kafka 它最初由LinkedIn 公司开发，之后成为Apache 项目的一部分。<br>Kafka 是一个<code>分布式消息中间件,支持分区的、多副本的、多订阅者的</code>、<code>基于zookeeper 协调的</code>分布式<br>消息系统。<br>通俗来说：<code> kafka 就是一个存储系统，存储的数据形式为“消息&quot;；</code><br>它的主要作用类似于蓄水池，起到一个<code>缓冲</code>作用；</p>
 <img src=".\md图\kafka.assets\image-20230204221620734.png" alt="image-20230204221620734" style="zoom:50%;" />
 
 <p>Kafka是由Apache软件基金会开发的一个开源流平台，由Scala和Java编写。Kafka的Apache官网是这样介绍Kakfa的。</p>
@@ -1058,7 +1067,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2023/06/16/Kafka/" data-id="clixy6nlu0005x4w98bqmgzlj" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2023/06/16/Kafka/" data-id="clixyjqjp000a4sw9fe9tbvap" data-title="kafka配置文档" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -1072,7 +1081,7 @@
       <strong class="article-nav-caption">Newer</strong>
       <div class="article-nav-title">
         
-          (no title)
+          node.js安装
         
       </div>
     </a>
@@ -1080,7 +1089,7 @@
   
     <a href="/2023/06/16/Git%E6%95%99%E7%A8%8B/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title"></div>
+      <div class="article-nav-title">Gite配置</div>
     </a>
   
 </nav>
@@ -1118,23 +1127,23 @@
       <ul>
         
           <li>
-            <a href="/2023/06/16/Hive3%E5%AE%89%E8%A3%85/">(no title)</a>
+            <a href="/2023/06/16/Hive3%E5%AE%89%E8%A3%85/">Hive3安装</a>
           </li>
         
           <li>
-            <a href="/2023/06/16/Hadoop-3.3.0-Centos7/">(no title)</a>
+            <a href="/2023/06/16/Hadoop-3.3.0-Centos7/">Hadoop3.3.0-Linux环境安装</a>
           </li>
         
           <li>
-            <a href="/2023/06/16/zookeeper%E9%83%A8%E7%BD%B2%E6%96%87%E6%A1%A3/">(no title)</a>
+            <a href="/2023/06/16/zookeeper%E9%83%A8%E7%BD%B2%E6%96%87%E6%A1%A3/">Zookeeper配置文档</a>
           </li>
         
           <li>
-            <a href="/2023/06/16/Sqoop/">(no title)</a>
+            <a href="/2023/06/16/Sqoop/">Sqoop配置文档</a>
           </li>
         
           <li>
-            <a href="/2023/06/16/Spark%E9%83%A8%E7%BD%B2%E6%96%87%E6%A1%A3/">(no title)</a>
+            <a href="/2023/06/16/Spark%E9%83%A8%E7%BD%B2%E6%96%87%E6%A1%A3/">Spark部署</a>
           </li>
         
       </ul>
